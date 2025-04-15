@@ -491,7 +491,9 @@ footer p{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
-    position: sticky;
+    position: relative;
+    top: 65px;
+    right: 15px;
     z-index: 10;
     gap: 20px;
 }
