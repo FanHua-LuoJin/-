@@ -287,18 +287,16 @@ footer p{
     margin: 0 200px;
     line-height: 2em;
     font-size: 20px;
-
+    min-width: 100px;
 }
 .rule p{
     font-size: 18px;
     margin: 0 220px;
     line-height: 1.8em;
+    min-width: 350px;
 }
 
-.rule .daiBiao,.xuanJiang,.bianLun{
-    display: flex;
-    flex-direction: row;
-}
+
 .rule .daiBiaoRen{
     display: none;
     flex-direction: column;
@@ -311,6 +309,7 @@ footer p{
     border: 0cap;
     background-color: #ede9db;
     color: blueviolet;
+    min-width: 70px;
 }
 .rule button:active{
     transform: scale(0.95);
@@ -654,19 +653,25 @@ footer p{
     .cards{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-left: 50px;
     }
     .cards p{
         width: 50%;
     }
+    .rule h4{
+        margin-left: 50px;
+    }
     .rule p{
         font-size: 17px;
         line-height: 1.8em;
+        margin-left: 50px;
     }
+    .rule button{
+        margin-left:50px;
+}
     .rule img{
         width: 350px;
         height: auto;
+        margin-left: 50px;
     }
 
     /* 发展历程部分 */
