@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="style释道.css">
+    <link rel="icon" href="./释道图片素材/icon.png">
+</head>
+<body>
+    <header>
+        <h1>释道</h1>
+        <nav>
+            <ul>
+                <li><a href="./释道.html" target="_blank">首页</a></li>
+                <li><a href="./关于我们.html" target="_blank">关于我们</a></li>
+                <li><a href="./游戏规则.html" target="_blank">游戏规则</a></li>
+                <li><a href="./发展历程.html" target="_blank">发展历程</a></li>
+                <li><a href="./联系我们.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="contact1">
+        <div class="admin-tools">
+            <p id="adminSituation"></p>
+            <button onclick="enableAdminMode()">管理员模式</button>
+        </div>
+
+
+        <h1>关注我们</h1> 
+        <div class="contact">
+    
+            <div>
+                <img src="./释道图片素材/2023.11.29 B站账号.png" alt="B站">
+                <a href="https://space.bilibili.com/3493256560117887/?spm_id_from=333.999.0.0" target="_blank">B站账号</a>
+            </div>
+            <div>
+                <img src="./释道图片素材/2024.3.25 抖音账号.png" alt="抖音">
+                <a href="https://www.douyin.com/user/MS4wLjABAAAAjZZImNgWRNZzhQtZ-I2Vd107e6FOLe-MyVOWhRo10EjmwAvNxpoROR65SO2obuUM?from_tab_name=main" target="_blank">抖音账号</a>    
+            </div>
+            <div>
+                <img src="./释道图片素材/页尾.gif" alt="微信">
+                <p>微信公众号：稷下牧场工作室</p>
+            </div>
+        </div>
+
+
+        <h1>评论留言</h1>
+        <div class="column">
+            留言区：
+            <div class="nickname">
+                <input type="text" id="nickName" placeholder="请输入昵称（可选）" maxlength="20">
+                <label class="remember-me">
+                    <input type="checkbox" id="rememberNickName">记住昵称
+                </label>
+            </div>
+
+            <textarea class="input" id="commentInput" placeholder="留下您的宝贵建议(最高不超过200字)"></textarea>
+            <div class="submit">
+                <button onclick="submitComment()">发布留言</button>
+                <span id="charCount">0/200</span>
+            </div>
+
+            <div class="commentlist" id="commentList"></div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
+        <br>稷下牧场工作室制作</p>
+    </footer>
+</body>
+
+<script src="./联系我们.js"></script>
+</html>
