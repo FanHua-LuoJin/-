@@ -310,6 +310,7 @@ footer p{
     background-color: #ede9db;
     color: blueviolet;
     min-width: 70px;
+    margin-left:220px;
 }
 .rule button:active{
     transform: scale(0.95);
