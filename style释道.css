@@ -1,5 +1,6 @@
 main{
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 h1{
@@ -573,9 +574,6 @@ footer p{
 
 /* 响应式设计语法 */
 @media screen and (max-width: 768px){
-    main{
-        overflow: hidden;
-    }
     h1{
         font-size: 30px;
     }
