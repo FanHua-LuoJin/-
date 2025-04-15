@@ -1,0 +1,708 @@
+main{
+    margin-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+    margin: 0 30px;
+}
+h4{
+    font-size: 25px;
+}
+.title{
+    border: 1px solid;
+    width: 15%;
+    background-color: rgb(77, 65, 65);
+    display: flex;
+    justify-content: center;
+    margin-left: 43%;
+    color: #ffffff;
+    padding: 0 10px;
+
+}
+
+/* 页首部分 */
+header{
+    background-color: rgba(234, 177, 182, 0.811);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-image: url("./释道图片素材/牧场logo.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    z-index: 99;
+    
+}
+
+header h1{
+    position: absolute;
+    bottom: -10px;
+}
+header ul{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    float: right;
+    text-align: center;
+    margin: auto;
+    line-height: 80px;
+    margin-left: 50px ;
+}
+
+header li{
+    display: inline-table;
+    margin-right: 4vw;
+
+}
+
+
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: 40px;
+}
+header a:hover{
+    text-decoration: underline;
+    background-color: rgb(206, 72, 72);
+    color: rgb(110, 53, 71);
+}
+
+header h1{
+    padding: 0 20px 0 100px;
+}
+
+/* 主页部分 */
+.index{
+    background-color: #f9f4e4;
+}
+/* 游戏简介 */
+.intro0{
+    background-image: url("./释道图片素材/背景图1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+}
+
+.introduction{
+    padding: 60px 0;
+    line-height: 2.0em;
+    text-indent: 2em;
+    font-size: 20px;
+    min-width: 500px;
+}
+
+
+.xuanchuan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+
+
+}
+
+/* 游戏展现 */
+.show {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px 80px 100px;
+    gap: 30px;
+
+}
+.show div{
+    width: 1000px;
+    text-align: center;
+}
+
+.show img{
+    height: auto;
+    width: 700px;
+    transition: 0.5s;
+}
+.show p{
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+
+.show img:hover{
+    opacity: 0.7;
+    box-shadow: 2px 2px 8px rgba(200, 127, 133, 0.811);
+    cursor: pointer;
+}
+.show1{
+    background-image: url(./释道图片素材/背景图4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic1{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba(0, 0, 0,0.7);
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+
+}
+
+.mappic{
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 800px;
+    height: 90%;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    object-fit: contain;
+}
+.cardpic{
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 800px;
+    height: 50%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    object-fit: contain;
+}
+#caption{
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    height: auto;
+    position: relative;
+    color: white;
+    margin-top: 52%;
+}
+#caption1{
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    height: auto;
+    position: relative;
+    color: white;
+    margin-top: 40%;
+}
+
+.pic1,#caption,#caption1{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom{
+    from{transform: scale(0.1)}
+    to{transform: scale(1.0);}
+}
+
+.close{
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    font-size: 50px;
+    color: white;
+}
+.close:hover,.close:focus{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* 页尾部分 */
+footer{
+    background-image: url(./释道图片素材/背景图2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin: 0 10px;
+    font-size: 20px;
+    line-height: 3em;
+    color: black;
+    text-align: center;
+}
+
+/* 关于我们 */
+.we h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.we p{
+    font-size: 20px;
+    padding: 10px;
+    margin:0 70px;
+    line-height: 2em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.we{
+    background-image: url(./释道图片素材/背景图1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 游戏规则 */
+
+.rule h3{
+    margin-left: 150px;
+}
+.rule{
+    background-image: url(./释道图片素材/背景图6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rule h4{
+    margin: 0 180px;
+    line-height: 2em;
+}
+.rule h5{
+    margin: 0 200px;
+    line-height: 2em;
+    font-size: 20px;
+
+}
+.rule p{
+    font-size: 18px;
+    margin: 0 220px;
+    line-height: 1.8em;
+}
+
+.rule .daiBiao,.xuanJiang,.bianLun{
+    display: flex;
+    flex-direction: row;
+}
+.rule .daiBiaoRen{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.rule button{
+    font-size: 20px;
+    line-height: 1.8em;
+    transition: 0.5s ease;
+    border: 0cap;
+    background-color: #ede9db;
+    color: blueviolet;
+}
+.rule button:active{
+    transform: scale(0.95);
+}
+
+.rule .close-btn{
+    margin: 10px 110px;
+}
+
+.rule .linDi,.xuanJiangEX,.bianLunEX{
+    display: flex;
+}
+
+.rule .xuanJiangEX,.bianLunEX{
+    display: none;
+}
+
+.rule img{
+    height:300px;
+    width: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0,0.2);
+    border-radius: 2px;
+}
+
+
+.rule button:hover{
+    cursor: pointer;
+    color: blue;
+}
+.rule .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 120px;
+}
+
+
+
+/* 发展历程与新闻动态 */
+
+.history{
+    background-image: url('./释道图片素材/背景图6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.history img{
+    height: 300px;
+    width: auto;
+}
+
+.history p{
+    font-size: 20px;
+    line-height: 2em;
+    margin: 0 40px;
+}
+
+.history .xuanJiangCeShi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history .chuShi,.zabing,.ruxun{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.history .tz{
+    text-align: center;
+}
+
+/* “联系我们” */
+.contact1{
+    background-color: #f4f1e8;
+}
+
+.contact{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-image:url("./释道图片素材/背景图5.jpg");
+    background-size:cover;
+}
+
+.contact img{
+    width: 500px;
+    height: auto;
+}
+.contact p,.contact a{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.contact a:hover{
+    color: blue;
+}
+
+/* 留言区 */
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5em;
+    background: rgba(234, 177, 182, 0.1);
+    font-size: 20px;
+
+}
+
+/* 留言内容 */
+.column textarea{
+    border-radius: 5px;
+    resize: both;
+    font-size: 18px;
+    transition: all 0.3s;
+    height: 100px;
+    width: 450px;
+}
+
+.column textarea:focus{
+    border-color: #b76e79;
+    box-shadow: 0 0 8px rgba(183, 110, 121, 0.3);
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    gap: 10px;
+}
+.submit button{
+    padding: 5px 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0,0.2);
+    transition: all 0.3s;
+}
+.submit button:hover{
+    transform: translateY(-2px);
+    background: #f4eaeb;
+    border: 1.5px solid;
+}
+.submit button:active{
+    opacity: 0.6;
+}
+
+#charCount{
+    font-size: 16px;
+    color: black;
+    margin-left:20px ;
+}
+.commentlist{
+    margin-top: 35px;
+}
+
+.comment-item{
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 1600px;
+}
+.comment-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px ;
+    color: black;
+    font-size: 22px;
+}
+.comment-content{
+    line-height: 1.8em;
+    font-size: 24px;
+    color: #333;
+}
+
+/* 管理员模式 */
+.admin-tools{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    position: sticky;
+    z-index: 10;
+    gap: 20px;
+}
+
+.admin-tools button{
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+.admin-tools button.active{
+    background-color: #999 !important;
+    content: "退出管理员";
+}
+
+.delete-btn{
+    color: white !important;
+    border: none;
+    font-size: 14px;
+    background: #ff4d4d !important;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* 点赞按钮 */
+.like-btn{
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    width: 200px;
+}
+.like-btn:hover{
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+.like-btn:active{
+    transform: scale(0.95);
+}
+.like-btn.active .like-icon{
+    transform: scale(1.3);
+    filter: drop-shadow(0 2px 4px rgba(255,65,65,0.3));
+}
+.like-btn.active .like-count{
+    font-weight: bold;
+}
+
+/* 昵称 */
+.nickname{
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    gap:10px;
+    
+}
+#nickName{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.remember-me{
+    color: #666;
+    white-space: nowrap;
+}
+
+
+.menu{
+    display: none;
+}
+
+
+/* 响应式设计语法 */
+@media screen and (max-width: 768px){
+    main{
+        overflow: hidden;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2,h3{
+        font-size: 25px;
+    }
+
+    header ul{
+        display: none;
+    }
+    header h1{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /* .menu{
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: relative;
+        left: 100px;
+        top:15px;
+        border: none;
+        cursor: pointer;
+    } */
+
+    .intro0{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .intro0 p{
+        font-size: 17px;
+    }
+
+    video{
+        width: 400px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+
+    .show{
+        display: flex;
+        flex-direction: column;
+    }
+    .show img{
+        width: 45%;
+    }
+
+    .mappic,.cardpic{
+        height: 60%;
+        width: 80%;
+    }
+    #caption,#caption1{
+        position: relative;
+        top: 350px;
+    }
+    /* 页尾 */
+    footer p{
+        font-size: 15px;
+    }
+
+    /* 关于我们部分 */
+    .we p{
+        font-size: 17px;
+        text-align: center;
+        line-height: 2em;
+        background-size:contain;
+    }
+
+    /* 游戏规则部分 */
+    .linDi,.xuanJiangEX,.bianLunEX{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .cards p{
+        width: 50%;
+    }
+    .rule p{
+        font-size: 17px;
+        line-height: 1.8em;
+    }
+    .rule img{
+        width: 350px;
+        height: auto;
+    }
+
+    /* 发展历程部分 */
+    .history p{
+        font-size: 17px;
+        line-height: 1.8em;
+    }
+    .history img{
+        width: 350px;
+        height: auto;
+    }
+
+    .chuShi,.zabing,.ruxun{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 联系我们部分 */
+    .contact p{
+        font-size: 17px;
+        line-height: 1.8em;
+    }
+    .contact img{
+        width: 350px;
+        height: auto;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .comment-item{
+        width: 400px;
+    }
+
+
+
+}
