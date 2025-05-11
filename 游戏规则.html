@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>游戏规则</title>
     <link rel="stylesheet" href="style释道.css">
-    <link rel="icon" href="./icon.png">
+    <link rel="icon" href="./释道图片素材/icon.png">
 </head>
 <body>
     <header>
         <h1>释道</h1>
         <nav>
             <ul>
-                <li><a href="./释道.html" target="_blank">首页</a></li>
+                <li><a href="./index.html" target="_blank">首页</a></li>
                 <li><a href="./关于我们.html" target="_blank">关于我们</a></li>
                 <li><a href="./游戏规则.html">游戏规则</a></li>
                 <li><a href="./发展历程.html" target="_blank">发展历程</a></li>
@@ -32,18 +32,17 @@
                 <h4>第三步</h4>
                 <p>所有学派将本学派代表人物竖置放入展示区，纵横家选择初始势力。所有学派依次摸取 3 张基本牌和 2 张学派专属牌。</p>
                 <div class="daiBiao">
-                    <p style="margin-right: 20px;">学派代表人物:</p>
-                    <button id="daiBiao" onclick="showFunction()">展开</button>
+                    <p>学派代表人物:</p>
+                    <button id="daiBiao">展开</button>
                 </div>
                 <div class="daiBiaoRen">
-                    <p style="font-size: 20px;"><b>儒家：孟轲<br>
+                    <p><b>儒家：孟轲<br>
                     道家：庄周<br>
                     法家：韩非<br>
                     墨家：墨翟<br>
                     杂家：吕不韦<br>
                     兵家：孙膑<br>
                     纵横家（合纵）/（连横）：苏秦/张仪</b></p>
-                    <button class="close-btn" onclick="hideFunction()">收起</button>
                 </div>
 
             </div>
@@ -51,13 +50,13 @@
             <div class="concept">
                 <h4>思想领地</h4>
                 <div class="linDi"> 
-                        <p>地图上八角星、盾牌形、方形和圆形都代表思想领地。<br>
+                    <p>地图上八角星、盾牌形、方形和圆形都代表思想领地。<br>
                         其中，八角星图案代表国都思想领地，占 3 分；<br>
                         方形图案代表城思想领地，占 2 分；<br>
                         圆形图案代表邑思想领地，占 1 分；<br>
                         盾牌图案代表小邦国思想领地，占 3 分。<br>
                         用线相连的思想领地即为相邻的思想领地。</p>
-                        <img src="./释道图片素材/思想领地介绍.png" alt="思想领地介绍">
+                    <img src="./释道图片素材/思想领地介绍.png" alt="思想领地介绍">
                 </div>    
                 <h4>玩家回合</h4>
                     <p>一回合分为开始阶段——摸牌阶段——行动阶段——结束阶段。由一号位开始所有玩家依次执行一个玩家回合。</p>
@@ -89,14 +88,13 @@
                     2. 选择 1 块其他学派的思想领地，进行宣讲对决。</p>
                     <p>宣讲对决：本学派与被宣讲的学派分别投掷 x 个骰子[x 为与被宣讲的思想领地相邻的思想领地（含该领地）数，且 x 至少为 1]，比较双方骰子点数的最大值，若发起者的最大值更大，视为宣讲成功，获得该思想领地。否则视为宣讲失败。</p>
                     <div class="xuanJiang">
-                        <p style="margin-right: 20px;">示例：</p>
-                        <button id="xuanJiang" onclick="showFunction1()">展开</button>
+                        <p>示例：</p>
+                        <button id="xuanJiang">展开</button>
                     </div>
                     <div class="xuanJiangEX">
                         <div class="xuanJiangE">
-                            <p style="margin-top: 75px;">道家（蓝色）打出“宣讲”，并选择思想领地“大梁”。由于道家有 2 块思想领地和“大梁”有连接，所以拥有 2颗骰子进行投掷。而控制“大梁”的法家（绿色）有 4 块相邻的思想领地，再加上“大梁”本身被法家控制，所以法家共有 5 颗骰子。
+                            <p>道家（蓝色）打出“宣讲”，并选择思想领地“大梁”。由于道家有 2 块思想领地和“大梁”有连接，所以拥有 2颗骰子进行投掷。而控制“大梁”的法家（绿色）有 4 块相邻的思想领地，再加上“大梁”本身被法家控制，所以法家共有 5 颗骰子。
         双方投掷骰子后结果如图，由于法家的最大值为“5”，大于道家的最大值“4”。所以道家宣讲失败，“大梁”仍归属于法家。</p>
-                            <button class="close-btn" onclick="hideFunction1()">收起</button>
                         </div>    
                             <img src="./释道图片素材/宣讲示例.png" alt="宣讲示例" style="margin-right: 50px;">
                     </div>
@@ -111,17 +109,16 @@
                     辩论结束后，双方的辩论人物必须横置。</p><br>
                     <p>辩论结算顺序：发起辩论——投掷骰子——决出结果——失败者学派失去思想领地——获胜者学派获取思想领地——横置人物——辩论结束。</p>
                     <div class="bianLun">
-                        <p style="margin-right: 20px;">示例：</p>
-                        <button id="bianLun" onclick="showFunction2()">展开</button>
+                        <p>示例：</p>
+                        <button id="bianLun">展开</button>
                     </div>
                     <div class="bianLunEX">
                         <div class="bianLunE">
-                            <p style="margin-top: 75px;">法家对道家打出“辩论”后，双方进行人物的选择。
+                            <p>法家对道家打出“辩论”后，双方进行人物的选择。
                                 法家的卡牌展示区有未被横置的人物“申不害”“李斯”，之后法家选择申不害进行辩论。而道家的卡牌展示区有未被横置的人物“田骈”“杨朱”，道家选择杨朱进行辩论。<br>
                                 进攻方骰子数为综合能力值+3，所以法家投掷 4+3=7颗骰子。防守方骰子数为综合能力值+2，所以道家投掷3+2=5 颗骰子。<br>
                                 投掷结果如图，法家存在 1 个“5”，2 个“6”，有 3 个立论成功点。而道家存在 1 个“5”，有 1 个立论成功点。<br>
                                 所以，法家取得辩论胜利。先将 3-1=2 块道家思想领地转换为法家思想领地，再横置辩论过的人物“申不害”“杨朱”。</p>
-                            <button class="close-btn" onclick="hideFunction2()">收起</button>
                         </div>    
                             <img src="./释道图片素材/辩论示例.png" alt="辩论示例" style="margin-right: 50px;">
                     </div>
@@ -224,5 +221,33 @@
     </footer>
     
 </body>
-<script src="./游戏规则.js"></script>
+<script>
+    const standard=document.querySelector('#daiBiao');
+    const standardPer=document.querySelector('.daiBiaoRen');
+    const xuanJiang=document.querySelector('#xuanJiang');
+    const xuanJiangEX=document.querySelector('.xuanJiangEX');
+    const bianLun=document.querySelector('#bianLun');
+    const bianLunEX=document.querySelector('.bianLunEX');
+    let flag=true
+    const fn=function(btn,con){
+        if(flag){
+            con.style.display='flex'
+            flag=false
+            btn.innerHTML="收起"
+        }else{
+            con.style.display='none'
+            flag=true
+            btn.innerHTML='展开'
+        }
+    }
+    standard.addEventListener('click',function(){
+        fn(standard,standardPer)
+    })
+    xuanJiang.addEventListener('click',function(){
+        fn(xuanJiang,xuanJiangEX)
+    })
+    bianLun.addEventListener('click',function(){
+        fn(bianLun,bianLunEX)
+    })
+</script>
 </html>
