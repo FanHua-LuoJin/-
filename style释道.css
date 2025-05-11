@@ -1,11 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main{
-    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
 h1{
     text-align: center;
     font-size: 40px;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
 }
 h3{
     font-size: 30px;
@@ -14,17 +25,7 @@ h3{
 h4{
     font-size: 25px;
 }
-.title{
-    border: 1px solid;
-    width: 15%;
-    background-color: rgb(77, 65, 65);
-    display: flex;
-    justify-content: center;
-    margin-left: 43%;
-    color: #ffffff;
-    padding: 0 10px;
 
-}
 
 /* 页首部分 */
 header{
@@ -43,7 +44,7 @@ header{
 
 header h1{
     position: absolute;
-    bottom: -10px;
+    bottom: 10px;
 }
 header ul{
     position: absolute;
@@ -101,18 +102,72 @@ header h1{
 }
 
 
-.xuanchuan{
+.showpic{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 25px;
-
 }
+.showpic img{
+    width: 600px;
+    height: auto;
+    margin-right: 60px;
+}
+.shidao-footer{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 42px;
+    right: 256px;
+  }
+  .shidao-footer .toggle{
+    position: absolute;
+    left: 510px;
+    bottom:0;
+    display: flex;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+  }
+  .shidao-footer .toggle button{
+    margin-right: 12px;
+    width: 30px;
+    height: 38px;
+    appearance: none;
+    border: none;
+    background:rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius:4px ;
+    cursor: pointer;
+  }
+  .shidao-footer .toggle button:hover{
+    background: rgba(255,255,255,0.3);
+  }
+  .shidao-indicator{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .shidao-indicator li{ 
+    width: 12px;
+    height: 12px;
+    margin: 11px 12px 15px 5px;
+    border-radius: 50%;
+    background:#fff;
+    opacity: 0.4;
+    cursor: pointer;
+    }
+  .shidao-indicator li.active{
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+  }
 
 /* 游戏展现 */
 .show {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,21 +300,18 @@ footer p{
 }
 
 /* 关于我们 */
-.we h2{
-    font-size: 25px;
-    text-align: center;
+.we h3{
+    width: 200px;
+    margin-left: 80px;
 }
-
 .we p{
     font-size: 20px;
     padding: 10px;
-    margin:0 70px;
+    margin:5px 100px;
     line-height: 2em;
     position: relative;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
-
 
 .we{
     background-image: url(./释道图片素材/背景图1.jpg);
@@ -269,15 +321,14 @@ footer p{
 
 /* 游戏规则 */
 
-.rule h3{
-    margin-left: 150px;
-}
 .rule{
     background-image: url(./释道图片素材/背景图6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.rule h3{
+    margin-left: 150px;
+}
 .rule h4{
     margin: 0 180px;
     line-height: 2em;
@@ -306,22 +357,16 @@ footer p{
     line-height: 1.8em;
     transition: 0.5s ease;
     border: 0cap;
-    background-color: #ede9db;
+    background-color: transparent;
     color: blueviolet;
     min-width: 70px;
+    margin-left:220px;
 }
-.rule button{
-    margin-left:220px
+.rule button:hover{
+    cursor: pointer;
+    color: blue;
 }
-.rule button:active{
-    transform: scale(0.95);
-}
-
-.rule .close-btn{
-    margin: 10px 220px;
-}
-
-.rule .linDi,.xuanJiangEX,.bianLunEX{
+.rule .linDi{
     display: flex;
 }
 
@@ -336,11 +381,6 @@ footer p{
     border-radius: 2px;
 }
 
-
-.rule button:hover{
-    cursor: pointer;
-    color: blue;
-}
 .rule .cards{
     display: flex;
     justify-content: space-between;
@@ -400,6 +440,8 @@ footer p{
 .contact img{
     width: 500px;
     height: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0,0.2);
+    border-radius: 3px;
 }
 .contact p,.contact a{
     font-size: 20px;
