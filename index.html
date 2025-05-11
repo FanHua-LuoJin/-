@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>释道官网</title>
     <link rel="stylesheet" href="style释道.css">
-    <link rel="icon" href="./icon.png">
+    <link rel="icon" href="./释道图片素材/icon.png">
 </head>
 <body>
     <header>
@@ -33,12 +33,22 @@
             </div>
             <br><br><br>
 
-            <div class="xuanchuan">
-                <video height="500px" style="padding:50px 20px;" controls poster="./释道图片素材/释道宣传片封面.jpg">
-                    <source src="https://shidao-1354425500.cos.ap-beijing.myqcloud.com/%E9%87%8A%E9%81%93%E5%AE%A3%E4%BC%A0%E7%89%87.mp4" type="video/mp4">
-                    你的浏览器不支持video标签
-                </video>
-                <p>释道宣传片</p>
+            <div class="showpic">
+                <img src="./释道图片素材/2023.11.3第一次线下活动1.png">
+                <div class="shidao-footer">
+                    <ul class="shidao-indicator">
+                      <li class="active"></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <div class="toggle">
+                      <button class="prev">&lt;</button>
+                      <button class="next">&gt;</button>
+                    </div>
+                  </div>
+                <p>释道线下活动</p>
             </div>
         </div>
 
@@ -50,7 +60,6 @@
                 <p><b>释道版面图</b></p>
             </div>
 
-
             <div>
                 <img id="cards" src="./释道图片素材/卡牌示例去图层.png" alt="卡片示例">
                 <p><b>卡片示例</b></p>
@@ -59,13 +68,13 @@
         </div>
         </div>
         <div class="pic1" id="mapEx1">
-            <span class="close">×</span>
+            <span class="close" id="close1">×</span>
             <img class="mappic" id="pic01">
             <div id="caption"></div>
         </div>
 
         <div class="pic1" id="mapEx2">
-            <span class="close">×</span>
+            <span class="close" id="close2">×</span>
             <img class="cardpic" id="pic02">
             <div id="caption1"></div>
         </div>
@@ -82,5 +91,82 @@
     </footer>
 
 </body>
-<script src="./释道.js"></script>
+<script>
+    const map=document.querySelector('#map');
+    const cards=document.querySelector('#cards');
+    const pic01=document.querySelector('#pic01');
+    const pic02=document.querySelector('#pic02');
+    const modal1=document.querySelector('#mapEx1');
+    const modal2=document.querySelector('#mapEx2');
+    const caption=document.querySelector('#caption');
+    const caption1=document.querySelector('#caption1');
+    map.addEventListener('click',function(){
+        modal1.style.display='block'
+        pic01.src=this.src
+        pic01.alt=this.alt
+        caption.innerHTML=this.alt
+    })
+    cards.addEventListener('click',function(){
+        modal2.style.display='block'
+        pic02.src=this.src
+        pic02.alt=this.alt
+        caption1.innerHTML=this.alt
+    })
+    const close1=document.querySelector('#close1');
+    const close2=document.querySelector('#close2');
+    close1.addEventListener('click',function(){
+        modal1.style.display='none'
+    })
+    close2.addEventListener('click',function(){
+        modal2.style.display='none'
+    })
+
+    const activity=[
+        {url:'./释道图片素材/2023.11.3第一次线下活动1.png',title:'2023.11.3活动'},
+        {url:'./释道图片素材/2023.11.3第一次线下活动2.png',title:'2023.11.3活动2'},
+        {url:'./释道图片素材/2023.12.17第二次线下活动.png',title:'2023.12.17活动3'},
+        {url:'./释道图片素材/2024.3.2第三次线下活动.png',title:'2024.3.2活动4'},
+        {url:'./释道图片素材/2024.3.31第四次线下活动.png',title:'2024.3.31活动5'}
+    ]
+    const prev=document.querySelector('.prev');
+    const next=document.querySelector('.next');
+    const img=document.querySelector('.showpic img');
+    let i=0
+    const fn=function(){
+        img.src=activity[i].url
+        img.title=activity[i].title
+        document.querySelector('.showpic .active').classList.remove('active')
+        const indicator=document.querySelector(`.showpic li:nth-child(${i+1})`);
+        indicator.classList.add('active')
+    }
+    prev.addEventListener('click',function(){
+        i--
+        if(i<0){
+            i=4
+        }
+        fn()
+    })
+    next.addEventListener('click',function(){
+        i++
+        if(i>=5){
+            i=0
+        }
+        fn()
+    })
+
+    let timeId=setInterval(function(){
+        next.click()
+    },2000)
+
+    img.addEventListener('mouseenter',function(){
+        clearInterval(timeId)
+    })
+
+    img.addEventListener('mouseleave',function(){
+        clearInterval(timeId)
+        timeId=setInterval(function(){
+            next.click()
+        },2000)
+    })
+</script>
 </html>
